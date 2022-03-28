@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">EMI Calculator</string>
+    <string name="last_calculate"><u>Last Calculate</u></string>
+
+</resources>

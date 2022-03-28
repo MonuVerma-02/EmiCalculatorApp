@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "512558756797",
+    "project_id": "emicalculator-e95c6",
+    "storage_bucket": "emicalculator-e95c6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:512558756797:android:c9710fc70691beb1e458d4",
+        "android_client_info": {
+          "package_name": "com.mv.emi.calculator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "512558756797-mubhfdp18uvsi986u1hdhp5942mmfuv9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4_Rffvcbh_usA6nqRMM-mGEJSAB4KehM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "512558756797-mubhfdp18uvsi986u1hdhp5942mmfuv9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
