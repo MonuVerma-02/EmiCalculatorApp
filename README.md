@@ -22,7 +22,7 @@ Emi Calculator is a simple loan calculation tool that helps the user to quickly 
 
  Let’s get understand.
 
- Why we use flow?
+ Why we use flow?<br/>
  A suspending function asynchronously returns a single value, but how can we return multiple asynchronously computed values?
  This is where Kotlin Flows come in.A flow is a type that can emit multiple values sequentially as opposed to suspend functions
  that return only a single value.
