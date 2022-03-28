@@ -44,7 +44,7 @@ Emi Calculator is a simple loan calculation tool that helps the user to quickly 
 
  DataStore: Jetpack DataStore is a data storage solution that allows you to store key-value pairs or typed objects with protocol buffers. DataStore uses Kotlin coroutines and Flow to store data asynchronously, consistently, and transactionally. If you’re currently using SharedPreferences to store data, consider migrating to DataStore instead.
 
- Note: you can download the source and lookup the code so you can better understand, what is use case of Flow & DataStore.
+ Note: You can download the source and lookup the code so you can better understand, what is use case of Flow & DataStore.
 
 ## Screenshots
 |<img src="screenshots/screenshot_1.jpg" width=200/>|<img src="screenshots/screenshot_2.jpg" width=200/>|<img src="screenshots/screenshot_3.jpg" width=200/>|
