@@ -1,7 +1,7 @@
 package com.emi.calculator.di.module
 
 import android.content.Context
-import com.emi.calculator.repository.EmiDataStoreRepositoryImpl
+import com.emi.calculator.repository.EmiDataStoreRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -15,6 +15,6 @@ class EmiDataStoreRepositoryModule {
 
     @Provides
     @Singleton
-    fun provideDataStore(@ApplicationContext context: Context) = EmiDataStoreRepositoryImpl(context)
+    fun provideDataStore(@ApplicationContext context: Context) = EmiDataStoreRepository(context)
 
 }

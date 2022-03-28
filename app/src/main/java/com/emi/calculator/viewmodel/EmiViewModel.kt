@@ -5,7 +5,7 @@ import androidx.lifecycle.viewModelScope
 import com.emi.calculator.data.Emi
 import com.emi.calculator.data.EmiPreferences
 import com.emi.calculator.extension.empty
-import com.emi.calculator.repository.EmiDataStoreRepositoryImpl
+import com.emi.calculator.repository.EmiDataStoreRepository
 import com.emi.calculator.repository.EmiRepository
 import kotlinx.coroutines.channels.BufferOverflow
 import kotlinx.coroutines.flow.*
@@ -14,7 +14,7 @@ import javax.inject.Inject
 
 class EmiViewModel @Inject constructor(
     private val emiRepository: EmiRepository,
-    private val dataStoreRepository: EmiDataStoreRepositoryImpl
+    private val dataStoreRepository: EmiDataStoreRepository
 ) : ViewModel() {
 
     private val _amount = MutableStateFlow(String.empty())

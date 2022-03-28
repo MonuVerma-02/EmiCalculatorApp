@@ -14,7 +14,7 @@ import kotlinx.coroutines.flow.map
 
 import javax.inject.Inject
 
-class EmiDataStoreRepositoryImpl @Inject constructor(context: Context) {
+class EmiDataStoreRepository @Inject constructor(context: Context) {
 
     private val dataStore: DataStore<Preferences> = context.createDataStore(
         name = PreferenceConstants.DATASTORE_NAME

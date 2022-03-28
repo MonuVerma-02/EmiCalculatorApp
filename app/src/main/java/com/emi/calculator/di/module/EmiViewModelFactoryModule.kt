@@ -1,6 +1,6 @@
 package com.emi.calculator.di.module
 
-import com.emi.calculator.repository.EmiDataStoreRepositoryImpl
+import com.emi.calculator.repository.EmiDataStoreRepository
 import com.emi.calculator.repository.EmiRepository
 import com.emi.calculator.viewmodel.EmiViewModelFactory
 import dagger.Module
@@ -17,7 +17,7 @@ class EmiViewModelFactoryModule {
     @Singleton
     fun provideViewModelFactory(
         emiRepository: EmiRepository,
-        dataStoreRepository: EmiDataStoreRepositoryImpl
+        dataStoreRepository: EmiDataStoreRepository
     ): EmiViewModelFactory =
         EmiViewModelFactory(emiRepository, dataStoreRepository)
 }
