@@ -1,22 +1,22 @@
 package com.emi.calculator.ui
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
-import com.emi.calculator.R
 import com.emi.calculator.common.Constants
 import com.emi.calculator.common.Keyboard
-import com.emi.calculator.databinding.EmiActivityBinding
-import com.emi.calculator.extension.empty
+
 import com.emi.calculator.utils.roundTo
+import com.emi.calculator.viewmodel.EmiActivityViewModel
 import com.emi.calculator.viewmodel.EmiViewModel
 import com.emi.calculator.viewmodel.EmiViewModelFactory
-import com.emi.calculator.viewmodel.EmiActivityViewModel
+import com.mpv.emi.calculator.R
+import com.mpv.emi.calculator.databinding.EmiActivityBinding
+
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
@@ -32,7 +32,7 @@ class EmiActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         installSplashScreen().apply {
-            viewModel = ViewModelProvider(this@EmiActivity).get(EmiActivityViewModel::class.java)
+            viewModel = ViewModelProvider(this@EmiActivity)[EmiActivityViewModel::class.java]
             setKeepVisibleCondition {
                 viewModel.isLoading.value
             }
